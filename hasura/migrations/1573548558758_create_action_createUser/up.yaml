@@ -1,0 +1,28 @@
+- args:
+    enums: []
+    input_objects: []
+    objects:
+    - name: UserInfo
+      fields:
+      - name: userId
+        type: Int
+      relationships:
+      - remote_table: users
+        name: user
+        field_mapping:
+          userId: id
+    scalars: []
+  type: set_custom_types
+- args:
+    definition:
+      arguments:
+      - name: name
+        type: String!
+      kind: synchronous
+      output_type: UserInfo
+      # for mac or windows
+      webhook: http://host.docker.internal:3000/createUser
+      # for linux (look for docker bridge ip : `ip addr show docker0`)
+      # webhook: http://172.17.0.1:3000/createUser
+    name: createUser
+  type: create_action
