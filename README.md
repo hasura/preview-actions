@@ -21,8 +21,7 @@ npm i
 npm start
 ```
 
-4. (For linux only) Change the service endpoint of the graphql service depending on your platform
-   in the migrations directory
+4. (For linux only) Since we are running Hasura in a docker container, change the ip of function service (depending on OS)
 
 ```
 # Edit the file with your favorite editor and set the right ip for your service
