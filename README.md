@@ -46,7 +46,7 @@ hasura-dev console
 # Rollback last migration
 hasura-dev migrate apply --down 1
 
-# Change "kind: synchronous" in migration
+# Change "kind: asynchronous" in migration
 vim hasura/migrations/1573548558758_create_action_createUser/up.yaml
 
 # Apply the new migration
