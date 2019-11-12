@@ -59,10 +59,6 @@ vim functions/createUser/index.js
 cd functions/createUser
 npm start
 
-# Restart the function
-cd functions/createUser
-npm start
-
 # Try out the mutation!
 hasura-dev console
 ```
