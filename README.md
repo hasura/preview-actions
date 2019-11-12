@@ -3,7 +3,7 @@
 1. Install the dev build of the CLI for your machine from `cli/`
 
 ```
-mv cli/cli-hasura-darwin-amd64 /usr/local/bin/hasura-dev
+mv cli/cli-hasura-<arch> /usr/local/bin/hasura-dev
 chmod +x /usr/local/bin/hasura-dev
 ```
 
