@@ -8,7 +8,7 @@ services:
     volumes:
     - db_data:/var/lib/postgresql/data
   graphql-engine:
-    image: hasura/graphql-engine:pull3252-873ee3c0
+    image: hasura/graphql-engine:pull3252-2ff65bb7
     ports:
     - "8080:8080"
     depends_on:
