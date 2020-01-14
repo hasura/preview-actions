@@ -7,7 +7,8 @@
       - name: userId
         type: Int
       relationships:
-      - remote_table: users
+      - type: object
+        remote_table: users
         name: user
         field_mapping:
           userId: id
@@ -21,7 +22,7 @@
       kind: synchronous
       output_type: UserInfo
       # for mac or windows
-      webhook: http://host.docker.internal:3000/createUser
+      handler: http://host.docker.internal:3000/createUser
       # for linux (look for docker bridge ip : `ip addr show docker0`)
       # webhook: http://172.17.0.1:3000/createUser
     name: createUser
