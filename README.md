@@ -1,3 +1,13 @@
+#### Preview Disclaimer
+
+These are preview builds which means:
+
+1. These are under active development. The image tags are continuously updated in this repo.
+2. There is no guarantee of backward compatibility with different versions of the preview.
+3. There is no guarantee of compatibility over an existing stable version of Hasura.
+
+If you are trying this out on an existing database with Hasura, make sure you export the Hasura metadata before trying this out.
+
 ## Getting started
 
 1. Install the dev build of the CLI for your machine from `cli/`
